@@ -72,7 +72,7 @@ Built a synthetic dataset of 50,000 customers and 692K transactions over 24 mont
 - **Spending behavior:** transaction frequency and amount scaled by tier (Gold customers transact ~5x more, ~5x larger basket)
 
 ### 2. Cohort Retention Calculation
-Implemented the **"last active month"** retention model — the industry standard:A customer is "retained at month N" if their most recent transaction occurred at month N or later. This avoids the common pitfall of counting customers as "churned" simply because they skipped a single month, which produces unrealistically jagged retention curves.
+Implemented the **"last active month"** retention model — the industry standard: A customer is "retained at month N" if their most recent transaction occurred at month N or later. This avoids the common pitfall of counting customers as "churned" simply because they skipped a single month, which produces unrealistically jagged retention curves.
 
 ### 3. SQL-Style Analytics in Pandas
 Used groupby + window function logic to compute:
